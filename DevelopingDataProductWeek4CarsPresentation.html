@@ -137,7 +137,14 @@
 <li>server.R - it contains the business logic</li>
 </ul>
 
-<p>Source codes are available on the GitHub: <a href='https://github.com/balacsa/DDPWeek4Assignment' title=''>https://github.com/balacsa/DDPWeek4Assignment</a></p>
+<p>This part of code do the data filtering:</p>
+
+<pre >mtcars2 &lt;- mtcars
+mtcars2 &lt;- mtcars2[mtcars2$cyl %in% input$cyl,]
+mtcars2 &lt;- mtcars2[mtcars2$am %in% input$am,]
+mtcars2 &lt;- mtcars2[mtcars2$gear %in% input$gear,]</pre>
+
+<p>The full source codes are available on the GitHub: <a href='https://github.com/balacsa/DDPWeek4Assignment' title=''>https://github.com/balacsa/DDPWeek4Assignment</a></p>
 
 </article></slide><slide class=""><hgroup><h2>Data used</h2></hgroup><article  id="data-used">
 

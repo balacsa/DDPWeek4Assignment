@@ -1,0 +1,60 @@
+---
+title: "Week 4 Assignment"
+author: "Laszlo Bak"
+date: "February 5, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE, warning=FALSE, error=FALSE, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This presentation is part of the Course Project for the Coursera Developing Data Products class week 4.
+
+Our tasks were:
+
+ * to create a Shiny application and deploy it on Rstudio's servers
+ * to make a reproducible pitch presentation about the application.
+
+This presentation adresses the second part of the course project.
+
+The first part of the assignment is avalilable at: https://balacsa.shinyapps.io/ddpmtcarspres/
+
+## About the application
+
+This application helps you to analyze mtcars dataset.
+
+You can filter the mtcars dataset by number of cyliders, type of transmission or number of gears.
+
+After you set filters you can check the summary of data on the Summary TAB or you can view the raw datas on the Table TAB.
+
+You can select a variable for analyze mpg ~ disp relation depend your variable.
+
+After you select a variable you see a graph on Plot TAB.
+
+## Technical details
+
+The application is build R using Shiny package and the source code are in two files:
+
+ * ui.R - it contains the application layout
+ * server.R - it contains the business logic
+ 
+Source codes are available on the GitHub: https://github.com/balacsa/DDPWeek4Assignment
+ 
+## Data used
+
+The mtcars data set contains 32 observation on 10 variables:
+
+ * mpg  : Miles/(US) gallon
+ * cyl  : Number of cylinders
+ * disp : Displacement (cu.in.)
+ * hp   : Gross horsepower
+ * drat : Rear axle ratio
+ * wt   : Weight (1000 lbs)
+ * qsec : 1/4 mile time
+ * vs   : Engine (0 = V-shaped, 1 = straight)
+ * am   : Transmission (0 = automatic, 1 = manual)
+ * gear : Number of forward gears
+ 

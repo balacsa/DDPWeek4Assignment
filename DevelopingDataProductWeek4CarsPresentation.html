@@ -134,15 +134,14 @@
 
 <ul>
 <li>ui.R - it contains the application layout</li>
-<li>server.R - it contains the business logic</li>
+<li>server.R - it contains the business logic`</li>
 </ul>
 
 <p>This part of code do the data filtering:</p>
 
-<pre >mtcars2 &lt;- mtcars
-mtcars2 &lt;- mtcars2[mtcars2$cyl %in% input$cyl,]
-mtcars2 &lt;- mtcars2[mtcars2$am %in% input$am,]
-mtcars2 &lt;- mtcars2[mtcars2$gear %in% input$gear,]</pre>
+<p><code>mtcars2 &lt;- mtcars</code></p>
+
+<p><code>mtcars2 &lt;- mtcars2[mtcars2$cyl %in% input$cyl,]</code> <code>mtcars2 &lt;- mtcars2[mtcars2$am %in% input$am,]</code> <code>mtcars2 &lt;- mtcars2[mtcars2$gear %in% input$gear,]</code></p>
 
 <p>The full source codes are available on the GitHub: <a href='https://github.com/balacsa/DDPWeek4Assignment' title=''>https://github.com/balacsa/DDPWeek4Assignment</a></p>
 

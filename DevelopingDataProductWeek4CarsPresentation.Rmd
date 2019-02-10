@@ -39,15 +39,16 @@ After you select a variable you see a graph on Plot TAB.
 The application is build R using Shiny package and the source code are in two files:
 
  * ui.R - it contains the application layout
- * server.R - it contains the business logic
+ * server.R - it contains the business logic`
  
 This part of code do the data filtering:
 
-    mtcars2 <- mtcars
-    mtcars2 <- mtcars2[mtcars2$cyl %in% input$cyl,]
-    mtcars2 <- mtcars2[mtcars2$am %in% input$am,]
-    mtcars2 <- mtcars2[mtcars2$gear %in% input$gear,]
- 
+`mtcars2 <- mtcars`
+
+`mtcars2 <- mtcars2[mtcars2$cyl %in% input$cyl,]`
+`mtcars2 <- mtcars2[mtcars2$am %in% input$am,]`
+`mtcars2 <- mtcars2[mtcars2$gear %in% input$gear,]`
+
 The full source codes are available on the GitHub: https://github.com/balacsa/DDPWeek4Assignment
  
 ## Data used

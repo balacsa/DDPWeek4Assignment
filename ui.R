@@ -8,7 +8,20 @@
 #
 
 library(shiny)
+documentationHtml = 
+'
+<br></br>
+This application helps you to analyze mtcars dataset.
+<br></br>
+You can filter the mtcars dataset by number of cyliders, type of transmission or number of gears.
+<br></br>
+After you set filters you can check the summary of data on the Summary TAB or you can view the raw datas on the Table TAB.
+<br></br>
+You can select a variable for analyze mpg ~ disp relation depend your variable.
+<br></br>
+After you select a variable you see a graph on Plot TAB.
 
+'
 # Define UI for application
 shinyUI(fluidPage(
   
@@ -36,12 +49,12 @@ shinyUI(fluidPage(
       tabsetPanel(type = "tabs",
                   tabPanel("Plot", plotOutput("plot1")),
                   tabPanel("Summary", verbatimTextOutput("summary")),
-                  tabPanel("Table", dataTableOutput("table1"))
+                  tabPanel("Table", dataTableOutput("table1")),
+                  tabPanel("Documentation", HTML(documentationHtml))
       )      
       
     )
     , position = c("left", "right"),
     fluid = TRUE
   )
-  
 ))
